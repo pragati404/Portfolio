@@ -212,6 +212,19 @@
     .cert-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
     .cert-org { font-size: 11px; color: var(--accent); font-family: 'Space Mono', monospace; }
 
+    /* VIDEO EMBED */
+    .proj-video { width: 100%; aspect-ratio: 16/9; border-radius: 4px; overflow: hidden; margin-bottom: 1rem; border: 1px solid var(--border); }
+    .proj-video iframe { width: 100%; height: 100%; border: none; display: block; }
+
+    /* BEYOND */
+    .beyond-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; }
+    .beyond-card { background: var(--surface); border: 1px solid var(--border); padding: 1.5rem; border-radius: 4px; text-align: center; transition: border-color 0.2s; }
+    .beyond-card:hover { border-color: var(--accent); }
+    .beyond-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .beyond-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
+    .beyond-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
+    .beyond-link { display: inline-block; margin-top: 0.6rem; font-size: 11px; font-family: 'Space Mono', monospace; color: var(--accent); text-decoration: none; }
+
     /* CONTACT */
     #contact { text-align: center; }
     .contact-box {
@@ -257,6 +270,7 @@
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#beyond">Beyond</a>
     <a href="#contact">Contact</a>
   </div>
   <a class="nav-contact" href="mailto:pragatiprithvi07@gmail.com">Let's Talk</a>
@@ -340,6 +354,39 @@
   <div class="sec-label reveal">// projects</div>
   <div class="sec-line reveal"></div>
   <div class="proj-grid">
+
+    <div class="proj-card reveal">
+      <div class="proj-video">
+        <iframe src="https://www.youtube.com/embed/8Oe3H6-m-Ag" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="proj-title">Vision-Guided Robotic Arm</div>
+      <div class="proj-sub">YOLOv8 · Arduino · 3-DOF</div>
+      <div class="proj-desc">AI-powered robotic arm achieving ~90% detection accuracy at 25 FPS. Trained on 500+ images with integrated servo/stepper motor control.</div>
+      <div class="proj-tags"><span class="ptag">YOLOv8</span><span class="ptag">Arduino</span><span class="ptag">Computer Vision</span></div>
+      <a class="proj-link" href="https://drive.google.com/file/d/1if67edd7DiinFUiAR7mbz1Eugrca4KeC/view" target="_blank">View Report →</a>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-video">
+        <iframe src="https://www.youtube.com/embed/L1Ig5xQl9Zk" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="proj-title">AgroSense</div>
+      <div class="proj-sub">Dual ESP32 IoT · Honorable Mention</div>
+      <div class="proj-desc">Fault-tolerant dual-ESP32 IoT system for crop health monitoring. Validated with logic analyzer; simulated 5+ fault conditions. Award winner.</div>
+      <div class="proj-tags"><span class="ptag">ESP32</span><span class="ptag">IoT</span><span class="ptag">Fault Testing</span></div>
+      <a class="proj-link" href="https://drive.google.com/file/d/1n4Litoe8P8YQN37n3NKjCBnL6491zyyw/view" target="_blank">View Report →</a>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-video">
+        <iframe src="https://www.youtube.com/embed/zyVN8ZBjLL8" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="proj-title">Solarscape</div>
+      <div class="proj-sub">Solar · ESP32 · IoT · Campus Innovation</div>
+      <div class="proj-desc">Smart park benches with solar-powered USB charging hubs, OLED displays for campus info, and ESP32-controlled nighttime LED lighting.</div>
+      <div class="proj-tags"><span class="ptag">Solar Energy</span><span class="ptag">ESP32</span><span class="ptag">OLED</span><span class="ptag">IoT</span></div>
+    </div>
+
     <div class="proj-card reveal">
       <div class="proj-icon">🔋</div>
       <div class="proj-title">Smart Battery Monitoring System</div>
@@ -347,14 +394,7 @@
       <div class="proj-desc">Touch-controlled voltage management system with real-time battery health monitoring and fault detection logic for lithium-ion cells.</div>
       <div class="proj-tags"><span class="ptag">BMS</span><span class="ptag">Power Electronics</span><span class="ptag">Hardware</span></div>
     </div>
-    <div class="proj-card reveal">
-      <div class="proj-icon">🤖</div>
-      <div class="proj-title">Vision-Guided Robotic Arm</div>
-      <div class="proj-sub">YOLOv8 · Arduino · 3-DOF</div>
-      <div class="proj-desc">AI-powered robotic arm achieving ~90% detection accuracy at 25 FPS. Trained on 500+ images with integrated servo/stepper motor control.</div>
-      <div class="proj-tags"><span class="ptag">YOLOv8</span><span class="ptag">Arduino</span><span class="ptag">Computer Vision</span></div>
-      <a class="proj-link" href="https://drive.google.com/file/d/1if67edd7DiinFUiAR7mbz1Eugrca4KeC/view" target="_blank">View Report →</a>
-    </div>
+
     <div class="proj-card reveal">
       <div class="proj-icon">🛰️</div>
       <div class="proj-title">Rudra Rover – R25</div>
@@ -363,6 +403,7 @@
       <div class="proj-tags"><span class="ptag">PCB Design</span><span class="ptag">Altium</span><span class="ptag">Soldering</span></div>
       <a class="proj-link" href="https://drive.google.com/file/d/1Ti9z4985rrS9HfImFKVZ_peuDxREk1I6/view" target="_blank">View Report →</a>
     </div>
+
     <div class="proj-card reveal">
       <div class="proj-icon">📡</div>
       <div class="proj-title">NetNerve</div>
@@ -371,14 +412,7 @@
       <div class="proj-tags"><span class="ptag">ESP32</span><span class="ptag">I2C</span><span class="ptag">Automotive Comms</span></div>
       <a class="proj-link" href="https://drive.google.com/file/d/1roOKRc4GoLACCSwCbBeBvl_SQya_L8BJ/view" target="_blank">View Report →</a>
     </div>
-    <div class="proj-card reveal">
-      <div class="proj-icon">🌱</div>
-      <div class="proj-title">AgroSense</div>
-      <div class="proj-sub">Dual ESP32 IoT · Honorable Mention</div>
-      <div class="proj-desc">Fault-tolerant dual-ESP32 IoT system for crop health monitoring. Validated with logic analyzer; simulated 5+ fault conditions. Award winner.</div>
-      <div class="proj-tags"><span class="ptag">ESP32</span><span class="ptag">IoT</span><span class="ptag">Fault Testing</span></div>
-      <a class="proj-link" href="https://drive.google.com/file/d/1n4Litoe8P8YQN37n3NKjCBnL6491zyyw/view" target="_blank">View Report →</a>
-    </div>
+
     <div class="proj-card reveal">
       <div class="proj-icon">⚡</div>
       <div class="proj-title">PWM Motor &amp; LED Controller</div>
@@ -387,6 +421,7 @@
       <div class="proj-tags"><span class="ptag">Power Electronics</span><span class="ptag">PWM</span><span class="ptag">MOSFET</span></div>
       <a class="proj-link" href="https://drive.google.com/file/d/1SPdjMVzVV9Lx3mX08MLrk5rGd5GPP4Ry/view" target="_blank">View Report →</a>
     </div>
+
   </div>
 </section>
 
@@ -442,6 +477,30 @@
     <div class="cert-card reveal">
       <div class="cert-icon">🌟</div>
       <div><div class="cert-title">Honorable Mention – Unplugged 1.0</div><div class="cert-org">AgroSense · ML-driven Agricultural Analysis</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BEYOND -->
+<section id="beyond">
+  <div class="sec-label reveal">// beyond engineering</div>
+  <div class="sec-line reveal"></div>
+  <div class="beyond-grid">
+    <div class="beyond-card reveal">
+      <div class="beyond-icon">🎥</div>
+      <div class="beyond-title">YouTube Creator</div>
+      <div class="beyond-desc">I love recording and editing videos — from project demos to everyday moments. Check out my channel!</div>
+      <a class="beyond-link" href="https://www.youtube.com/channel/UCHj5GnGA5dd6DcKMANHydQg" target="_blank">Visit Channel →</a>
+    </div>
+    <div class="beyond-card reveal">
+      <div class="beyond-icon">🌅</div>
+      <div class="beyond-title">Sunset Chaser</div>
+      <div class="beyond-desc">There's nothing quite like a sunset at the beach. It's where I reset, reflect, and recharge.</div>
+    </div>
+    <div class="beyond-card reveal">
+      <div class="beyond-icon">🗺️</div>
+      <div class="beyond-title">City Explorer</div>
+      <div class="beyond-desc">I love exploring different cities — new streets, new food, new people. Every city has its own energy.</div>
     </div>
   </div>
 </section>
